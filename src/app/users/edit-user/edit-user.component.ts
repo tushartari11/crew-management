@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './edit-user.component.html',
   styleUrl: './edit-user.component.scss',
 })
-export class EditUserComponent {}
+export class EditUserComponent {
+  adminName: string = 'Tushar';
+}
