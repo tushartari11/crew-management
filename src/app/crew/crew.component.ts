@@ -7,4 +7,13 @@ import { CrewDesignationsComponent } from '../crew-designations/crew-designation
   templateUrl: './crew.component.html',
   styleUrl: './crew.component.scss',
 })
-export class CrewComponent {}
+export class CrewComponent {
+  messageForComponent: string = 'From Parent';
+  userToken: string = 'jjahsd22sasad35';
+
+  receivedMessage: string = '';
+
+  receivingMessage(message: string) {
+    this.receivedMessage = message;
+  }
+}

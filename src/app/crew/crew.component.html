@@ -1,3 +1,10 @@
 <p>crew works!</p>
 
-<app-crew-designations></app-crew-designations>
+<p>Inside Crew Designations</p>
+<app-crew-designations
+  [message]="messageForComponent"
+  [token]="userToken"
+  (messageEvent)="receivingMessage($event)"
+></app-crew-designations>
+
+<p>{{ receivedMessage }}</p>
