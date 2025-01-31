@@ -13,6 +13,6 @@ export class CrewDesignationsComponent {
 
   @Output() messageEvent = new EventEmitter<string>();
   sendMessage() {
-    this.messageEvent.emit('Hello from Child to Parent');
+    this.messageEvent.emit('Hello from Child to Parent.');
   }
 }
