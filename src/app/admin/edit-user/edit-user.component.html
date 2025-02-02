@@ -4,4 +4,14 @@
 
 <a [href]="anchorUrl">Link building with property binding</a>
 
+<div [class]="className">This is div</div>
+
 <button [disabled]="disabled">Subscribe</button>
+
+<button (click)="buttonClicked()">Click me</button>
+
+<input type="text" (keyup)="captureValue($event)" />
+
+<div (mouseover)="onMouseOver($event)" (mouseout)="onMouseOut($event)">
+  Hover me
+</div>
