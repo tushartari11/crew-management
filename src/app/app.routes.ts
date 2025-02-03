@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { TwoWayComponent } from './two-way/two-way.component';
 
 export const routes: Routes = [
   {
@@ -12,5 +13,9 @@ export const routes: Routes = [
       import('./admin/add-user/add-user.component').then(
         (c) => c.AddUserComponent
       ),
+  },
+  {
+    path: 'two-way',
+    component: TwoWayComponent,
   },
 ];
