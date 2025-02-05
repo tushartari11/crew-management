@@ -1,0 +1,18 @@
+<p>signal works!</p>
+<p>Counter value is {{ counter() }}</p>
+<p>Users value is : {{ users() }}</p>
+<p>
+  Videos:
+  <br />
+  Title value is {{ videos().title }}
+  <br />
+  Description value is {{ videos().description }}
+</p>
+
+<button (click)="setCounter()">Set Counter</button>
+<br />
+<br />
+<button (click)="setVideo()">Set Video</button>
+<br />
+<br />
+<button (click)="updateCounter()">Update Counter</button>
